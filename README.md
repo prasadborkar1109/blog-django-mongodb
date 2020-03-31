@@ -60,8 +60,7 @@ Change your settings.py file to setup Mongo DB:
         'default': {
         'ENGINE': 'djongo',
         'NAME': <db_name>,
-        'HOST': 'mongodb+srv://<username>:'+ urllib.parse.quote(<password>) +
-                '@cluster1109-2itwv.mongodb.net/test?retryWrites=true&w=majority',
+        'HOST': 'mongodb+srv://<your_atlas_connect_url>',
         'USER': <username>,
         'PASSWORD': <password>,
         }
