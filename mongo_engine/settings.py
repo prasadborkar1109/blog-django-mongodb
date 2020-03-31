@@ -80,11 +80,10 @@ WSGI_APPLICATION = 'mongo_engine.wsgi.application'
 DATABASES = {
         'default': {
         'ENGINE': 'djongo',
-        'NAME': 'test',
-        'HOST': 'mongodb+srv://prasadb:'+ urllib.parse.quote('VrXK1Yn0f8aUqcjh') +
-                '@cluster1109-2itwv.mongodb.net/test?retryWrites=true&w=majority',
-        'USER': 'prasadb',
-        'PASSWORD': 'VrXK1Yn0f8aUqcjh',
+        'NAME': <db_name>,
+        'HOST': 'mongodb+srv://<your_atlas_connect_url>',
+        'USER': <username>,
+        'PASSWORD': <password>,
     }
 }
 
