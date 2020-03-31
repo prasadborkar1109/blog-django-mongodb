@@ -101,6 +101,16 @@ Use below command to run your django application
     python manage.py runserver 8080
 
 
+### Django Admin
+You can use below url to access django admin. It is very user friendly interface
+using which you can create, update and delete model objects.
+
+    admin url: http://localhost:8080/admin/
+    
+![Blog Admin](static/django_admin.PNG)
+
+
+
 ## APIs and Documentation
 
 ### Blog service
