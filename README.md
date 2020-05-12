@@ -73,7 +73,7 @@ Run below commands to check the Mongo DB Atlas connection:
 `python manage.py makemigrations` and `python manage.py migrate`
 
 
-If you see DB connection error like 'pymongo.errors.ServerSelectionTimeoutError: localhost:27017' then
+If you see DB connection error like `pymongo.errors.ServerSelectionTimeoutError: localhost:27017` then
 you might need to tweak below change in pymongo/mongo_client.py as there is still bug 
 in current version of djongo (1.3.1). Instead of connecting to passed HOST in Database settings 
 it always tries to connect to localhost.
@@ -93,6 +93,10 @@ it always tries to connect to localhost.
         PORT = 27017
    ```
 4) Save the file, run migrations again and you're connected to MongoDB Atlas.
+
+And,
+if you see this error `pymongo.errors.ServerSelectionTimeoutError: connection closed,connection closed` then
+please cross check if your System IP address is whitelisted in MongoDB Atlas or not.
 
 
 ### Run application
